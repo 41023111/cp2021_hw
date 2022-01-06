@@ -451,7 +451,7 @@ def run():
     try:
         url = doc.query["src"]
     except:
-        url = "https://gist.githubusercontent.com/41023111/8a405ea731df0768dc14cb0c90ea9569/raw/6036186f2eb66d321dad0d7349c503c60a26f850/ai%2520snake"
+        url = "https://gist.githubusercontent.com/41023111/c267229180b4d273e5b6527fb9f7fcc7/raw/f301be6e247552006bc229869267d1625288101b/ai%2520snake"
     prog = open(url).read()
 
     # 將程式載入編輯區
@@ -631,6 +631,11 @@ snake_url = "https://gist.githubusercontent.com/Xiang41023113/865b7fc745e30459a7
 snake= button2(snake_url)
 doc["snake"].bind("click", snake.do)
 ################################## snake end
+################################## aisnake start
+aisnake_url = "https://gist.githubusercontent.com/41023111/8a405ea731df0768dc14cb0c90ea9569/raw/6036186f2eb66d321dad0d7349c503c60a26f850/ai%2520snake"
+aisnake= button2(aisnake_url)
+doc["aisnake"].bind("click", aisnake.do)
+################################## aisnakeend
 ################################## W13start
 W13_url = "https://gist.githubusercontent.com/41023111/1ff709678be56614bd2078f0c2c345b7/raw/e3f2b2dc6f7dbc01472f1e7c00e77721ab8eb99a/w13"
 W13= button2(W13_url)
